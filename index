@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kencha House – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #F0EBE0;
+      font-family: 'Playfair Display', serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 500px;
+      margin: 0 1rem 1.5rem;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Kencha House Logo" class="logo" />
+  <h1>Coming Soon to Toronto</h1>
+  <p>We offer matcha workshops that introduce people to the mindful preparation and rich tradition of matcha.</p>
+  <div class="tagline">Joy in Every Ritual.</div>
+</body>
+</html>
