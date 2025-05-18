@@ -2,45 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kencha House – Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding: 0 2rem 2rem 2rem;
       background-color: #F0EBE0;
       font-family: 'Playfair Display', serif;
       color: #333;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
+      position: relative;
     }
 
     .logo {
-      width: 120px;
+      width: 200px;
       height: auto;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 2rem;
     }
 
     p {
       font-size: 1.25rem;
       max-width: 500px;
-      margin: 0 1rem 1.5rem;
+      margin: 0 1rem 4rem;
     }
 
     .tagline {
-      font-size: 1.5rem;
-      font-weight: bold;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-style: italic;
+      font-size: 1rem;
+      font-weight: 400;
       letter-spacing: 1px;
+      margin-top: 5rem;
+      margin-bottom: 0.5rem; /* reduced from 1rem */
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0.5rem;
+      width: 100%;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #666;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .ig-icon {
+      width: 20px;
+      height: 20px;
+      fill: #666;
+      cursor: pointer;
+      transition: fill 0.3s ease;
+    }
+
+    .ig-icon:hover {
+      fill: #000;
     }
   </style>
 </head>
@@ -48,6 +79,14 @@
   <img src="logo.png" alt="Kencha House Logo" class="logo" />
   <h1>Coming Soon to Toronto</h1>
   <p>We offer matcha workshops that introduce people to the mindful preparation and rich tradition of matcha.</p>
-  <div class="tagline">Joy in Every Ritual.</div>
+  <div class="tagline">Joy in Every Ritual</div>
+  <footer>
+    <a href="https://www.instagram.com/kenchahouse/" target="_blank" aria-label="Instagram Kencha House">
+      <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.5-3a1 1 0 110 2 1 1 0 010-2z"/>
+      </svg>
+    </a>
+    <span>© 2025 Kencha House</span>
+  </footer>
 </body>
 </html>
