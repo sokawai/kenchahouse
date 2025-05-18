@@ -35,7 +35,7 @@
     p {
       font-size: 1.25rem;
       max-width: 500px;
-      margin: 0 1rem 4rem;
+      margin: 0 1rem 1.5rem; /* reduced bottom margin */
     }
 
     .tagline {
@@ -44,8 +44,8 @@
       font-size: 1rem;
       font-weight: 400;
       letter-spacing: 1px;
-      margin-top: 5rem;
-      margin-bottom: 0.5rem; /* reduced from 1rem */
+      margin-top: 0;
+      margin-bottom: 0.5rem;
     }
 
     footer {
@@ -73,12 +73,29 @@
     .ig-icon:hover {
       fill: #000;
     }
+
+    /* Responsive fix for mobile spacing */
+    @media (max-width: 480px) {
+      body {
+        padding: 0 1rem 1rem 1rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      .tagline {
+        margin-bottom: 0.2rem;
+      }
+      footer {
+        gap: 0.2rem;
+        bottom: 0.2rem;
+      }
+    }
   </style>
 </head>
 <body>
   <img src="logo.png" alt="Kencha House Logo" class="logo" />
   <h1>Coming Soon to Toronto</h1>
-  <p>Join our workshops to discover the joy of making and sipping matcha.</p>
+  <p>We run workshops to help you enjoy making and tasting matcha.</p>
   <div class="tagline">Joy in Every Ritual</div>
   <footer>
     <a href="https://www.instagram.com/kenchahouse/" target="_blank" aria-label="Instagram Kencha House">
