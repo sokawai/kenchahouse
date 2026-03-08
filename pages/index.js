@@ -24,11 +24,13 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center text-center px-6">
             <div className="max-w-2xl text-white">
               <p className="uppercase tracking-[0.3em] text-[10px] mb-4 opacity-90">Now Welcoming Little Dreamers</p>
-              <h1 className="text-5xl md:text-7xl mb-12">A Calm, Beautiful Space for Babies &amp; Toddlers to Grow.</h1>
+              <h1 className="text-5xl md:text-7xl mb-12">A Cozy Play Space for Babies &amp; Toddlers.</h1>
               <div className="flex flex-col gap-4 max-w-xs mx-auto">
                 <a
-                  className="bg-primary text-white px-8 py-4 uppercase text-[10px] tracking-[0.2em] hover:opacity-90 transition-opacity w-full text-center"
+                  className="bg-white text-stone-900 px-8 py-4 uppercase text-[10px] tracking-[0.2em] font-semibold hover:bg-stone-100 transition-colors shadow-xl w-full text-center"
                   href="https://kenchahouse.youcanbook.me/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Book Private Play
                 </a>

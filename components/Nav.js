@@ -41,6 +41,8 @@ export default function Nav() {
         <div className="hidden md:flex flex-shrink-0 items-center">
           <a
             href="https://kenchahouse.youcanbook.me/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary text-white px-7 py-3 text-sm font-medium uppercase tracking-[0.15em] hover:opacity-90 transition-opacity"
           >
             Visit Us
@@ -58,6 +60,8 @@ export default function Nav() {
             <Link className="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="/about" onClick={() => setMobileOpen(false)}>About</Link>
             <a
               href="https://kenchahouse.youcanbook.me/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full bg-primary text-white px-3 py-2 text-[10px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity text-center"
             >
               Visit Us

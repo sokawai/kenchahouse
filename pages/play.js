@@ -24,6 +24,8 @@ export default function Play() {
           <a
             className="inline-block bg-primary text-white text-center px-8 py-4 uppercase text-[10px] tracking-[0.2em] font-medium hover:opacity-90 transition-opacity"
             href="https://kenchahouse.youcanbook.me/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Book Private Play
           </a>
@@ -99,6 +101,8 @@ export default function Play() {
             <a
               className="block w-full bg-primary text-white text-center py-4 uppercase text-[10px] tracking-[0.2em] font-medium hover:opacity-90 transition-opacity"
               href="https://kenchahouse.youcanbook.me/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Book Your Private Session
             </a>
