@@ -1,0 +1,192 @@
+import Head from 'next/head';
+import Layout from '../components/Layout';
+
+export default function FAQ() {
+  return (
+    <Layout>
+      <Head>
+        <title>FAQ | Kencha House</title>
+      </Head>
+
+      <main className="px-6 py-16 max-w-3xl mx-auto text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+        <h1 className="text-4xl mb-8">Frequently Asked Questions</h1>
+
+        <h2 className="text-2xl mt-8">What ages is Kencha House designed for?</h2>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Kencha House is thoughtfully designed for babies and toddlers ages 0–4 years. Our space supports early milestones — from tummy time and first crawls to climbing confidence and imaginative toddler play.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-8">Is this a drop-off space?</h2>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>No. Kencha House is a parent-supervised environment. A caregiver must remain present and actively supervise their child at all times.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-8">Do I need to book in advance?</h2>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Yes. All sessions must be booked online in advance to maintain our low-capacity, calm atmosphere. Walk-ins are not guaranteed.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-8">How long are play sessions?</h2>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Play sessions are 50 minutes. This allows little ones to explore without becoming overstimulated and ensures smooth transitions between groups.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-8">How many children are allowed per session?</h2>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>We intentionally limit capacity to maintain a peaceful, comfortable environment for babies, toddlers, and caregivers.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-12">Safety &amp; Cleanliness</h2>
+
+        <h3 className="text-xl mt-6">How is the space cleaned?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>
+            We follow a structured daily cleaning schedule including:
+            <ul className="list-[circle] pl-6 space-y-1 mt-2">
+              <li>Sanitizing high-touch surfaces between sessions</li>
+              <li>Rotating and disinfecting play materials</li>
+              <li>Deep cleaning routines</li>
+            </ul>
+          </li>
+          <li>Our goal is to provide a safe, hygienic environment for young children.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h3 className="text-xl mt-6">What if my child is sick?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>If your child has had a fever, vomiting, diarrhea, or symptoms of contagious illness within the past 24 hours, we kindly ask that you reschedule. This helps protect all families visiting the space.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h3 className="text-xl mt-6">Are socks required?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Yes. Socks are required for both children and adults in the play area. Socks are available for purchase if needed.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-12">Space &amp; Amenities</h2>
+
+        <h3 className="text-xl mt-6">Where are the washrooms located?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Restroom facilities are located outside the immediate play unit and are accessible via elevator. We recommend planning accordingly before your session begins.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h3 className="text-xl mt-6">Is there stroller parking?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Yes, designated stroller parking is available within the building.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h3 className="text-xl mt-6">Is the space accessible?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>The building includes elevator access. If you have specific accessibility needs, please contact us in advance so we can best accommodate you.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-12">Memberships</h2>
+
+        <h3 className="text-xl mt-6">What are the benefits of becoming a member?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>
+            Members receive:
+            <ul className="list-disc pl-6 space-y-1 mt-2">
+              <li>Priority booking</li>
+              <li>Discounted sessions</li>
+              <li>Exclusive events</li>
+              <li>Early access to special programming</li>
+            </ul>
+          </li>
+          <li>Membership is ideal for families who plan to visit regularly.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h3 className="text-xl mt-6">Can I pause or cancel my membership?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Membership terms and cancellation policies are outlined at the time of registration. Please refer to your membership agreement for full details.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-12">Studio Rentals</h2>
+
+        <h3 className="text-xl mt-6">What can the studio be used for?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>
+            Our natural light studio is perfect for:
+            <ul className="list-disc pl-6 space-y-1 mt-2">
+              <li>Baby milestone photos</li>
+              <li>First birthday sessions</li>
+              <li>Mommy &amp; Me portraits</li>
+              <li>Brand content</li>
+              <li>Mini sessions</li>
+            </ul>
+          </li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h3 className="text-xl mt-6">Do you provide a photographer?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>We offer studio rental only. You are welcome to bring your own photographer, or we can recommend trusted local partners.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-12">Parties</h2>
+
+        <h3 className="text-xl mt-6">What ages are parties best suited for?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Our parties are best for 1st–4th birthdays and small toddler gatherings.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h3 className="text-xl mt-6">How many guests can we invite?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Capacity depends on the party package selected. We focus on intimate, comfortable gatherings rather than large-scale events.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h3 className="text-xl mt-6">Do you provide decorations?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>We offer optional styling add-ons. Our base package includes access to the beautifully designed space.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h2 className="text-2xl mt-12">Policies</h2>
+
+        <h3 className="text-xl mt-6">What is your cancellation policy?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Cancellations and rescheduling policies are outlined at booking. We encourage reviewing these before confirming your session.</li>
+        </ul>
+
+        <hr className="my-8 border-stone-200 dark:border-stone-700" />
+
+        <h3 className="text-xl mt-6">Do I need to sign a waiver?</h3>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>Yes. A signed waiver is required for all participating children and must be completed before your first visit.</li>
+        </ul>
+      </main>
+    </Layout>
+  );
+}
