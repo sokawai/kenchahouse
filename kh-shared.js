@@ -58,7 +58,7 @@ const KH_NAV = '\
       <a class="text-[12px] uppercase tracking-[0.2em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>\
     </div>\
     <div class="hidden md:flex items-center gap-4 md:gap-6">\
-      <button class="bg-primary text-white px-5 py-2 text-xs uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.location.href=\'https://kenchahouse.youcanbook.me/\'">\
+      <button class="bg-primary text-white px-5 py-2 text-xs uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.open(\'https://kenchahouse.youcanbook.me/\', \'_blank\', \'noopener,noreferrer\')">\
         Visit Us\
       </button>\
     </div>\
@@ -69,7 +69,7 @@ const KH_NAV = '\
       <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="parties.html">Parties</a>\
       <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="studio.html">Studio</a>\
       <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>\
-      <button class="w-full bg-primary text-white px-3 py-2 text-[10px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.location.href=\'https://kenchahouse.youcanbook.me/\'">\
+      <button class="w-full bg-primary text-white px-3 py-2 text-[10px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.open(\'https://kenchahouse.youcanbook.me/\', \'_blank\', \'noopener,noreferrer\')">\
         Visit Us\
       </button>\
     </div>\
@@ -100,26 +100,31 @@ const KH_FOOTER = '\
         <ul class="space-y-4 text-sm text-stone-600 dark:text-stone-300">\
           <li><a class="hover:text-primary transition-colors" href="mailto:kenchahouse@gmail.com">Contact Us</a></li>\
           <li><a class="hover:text-primary transition-colors" href="faq.html">FAQ</a></li>\
-          <li><a class="hover:text-primary transition-colors" href="https://form.jotform.com/260586396097270">Waivers</a></li>\
-          <li><a class="hover:text-primary transition-colors" href="https://www.instagram.com/kenchahouse/" target="_blank">Instagram</a></li>\
+          <li><a class="hover:text-primary transition-colors" href="https://form.jotform.com/260586396097270">Waiver</a></li>\
         </ul>\
       </div>\
       <div>\
         <h4 class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-6">Visit</h4>\
         <p class="text-sm text-stone-600 dark:text-stone-300 leading-relaxed">\
-          222 Finch Ave W Suite 105,\
-          North York, ON M2R 1M6<br/>\
-          <a href="https://www.instagram.com/kenchahouse/" class="inline-block mt-4 text-stone-600 dark:text-stone-300 hover:text-primary transition-colors" target="_blank">@kenchahouse</a><br/>\
-          <a href="mailto:kenchahouse@gmail.com" class="inline-block mt-2 text-sm text-stone-600 dark:text-stone-300">kenchahouse@gmail.com</a>\
+          <a href="https://maps.google.com/?q=222+Finch+Ave+W+Suite+105+North+York+ON+M2R+1M6" target="_blank" rel="noopener noreferrer" class="inline-block hover:text-primary transition-colors">\
+            <span class="block">222 Finch Ave W Suite 105,</span>\
+            <span class="block mt-1">North York, ON M2R 1M6</span>\
+          </a>\
+          <span class="mt-4 flex items-center gap-4">\
+            <a href="https://www.instagram.com/kenchahouse/" class="text-stone-600 dark:text-stone-300 hover:text-primary transition-colors" target="_blank" aria-label="Instagram">\
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">\
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.75a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-8.5a4 4 0 0 0-4-4h-8.5Zm8.88 1.5a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Z"/>\
+              </svg>\
+            </a>\
+            <a href="mailto:kenchahouse@gmail.com" class="text-stone-600 dark:text-stone-300 hover:text-primary transition-colors" aria-label="Email">\
+              <span class="material-symbols-outlined text-xl">mail</span>\
+            </a>\
+          </span>\
         </p>\
       </div>\
     </div>\
-    <div class="border-t border-stone-100 dark:border-stone-800 pt-12 text-center space-y-6">\
+    <div class="border-t border-stone-100 dark:border-stone-800 pt-12 text-center">\
       <p class="text-[10px] text-stone-400 tracking-wider">&copy; 2026 Kencha House. All rights reserved.</p>\
-      <div class="flex justify-center gap-8">\
-        <a class="text-stone-400 hover:text-primary" href="https://www.instagram.com/kenchahouse/" target="_blank"><span class="material-symbols-outlined text-2xl">camera_alt</span></a>\
-        <a class="text-stone-400 hover:text-primary" href="mailto:kenchahouse@gmail.com"><span class="material-symbols-outlined text-2xl">mail</span></a>\
-      </div>\
     </div>\
   </div>\
 </footer>';
