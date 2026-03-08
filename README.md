@@ -39,13 +39,22 @@ kenchahouse/
 
 ## Getting Started
 
-### Install dependencies
+### GitHub Codespaces (recommended)
+
+Open the repo in a Codespace — it will automatically run `npm install` and `npm run dev` and forward port **3000** as the preview.
+
+> **Important:** the app runs on **port 3000**, not port 5500.  
+> If you see a directory listing, click the **Ports** tab in VS Code, find port `3000`, and open the preview URL there. Alternatively, rebuild the container: `Ctrl+Shift+P` → **"Codespaces: Rebuild Container"**.
+
+### Local development
+
+#### Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run development server
+#### Run development server
 
 ```bash
 npm run dev
