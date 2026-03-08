@@ -28,8 +28,8 @@ tailwind.config = {
         sand:               "#F5F2ED",
       },
       fontFamily: {
-        display: ["'Cormorant Garamond'", "serif"],
-        sans:    ["'Inter'", "sans-serif"],
+        display: ["'Merriweather'", "serif"],
+        sans:    ["'Nunito'", "sans-serif"],
       },
       borderRadius: {
         DEFAULT: "4px",
