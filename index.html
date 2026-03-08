@@ -1,109 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kencha House – Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0 2rem 2rem 2rem;
-      background-color: #F4EEE4;
-      font-family: 'Playfair Display', serif;
-      color: #333;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-    }
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kencha House | A Place for Play &amp; Connection</title>
+<link rel="icon" type="image/png" href="logo3.png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link rel="stylesheet" href="design-system.css"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script src="kh-shared.js"></script>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-200 transition-colors duration-300">
 
-    .logo {
-      width: 200px;
-      height: auto;
-      margin-bottom: 3rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-    }
-
-    p {
-      font-size: 1.25rem;
-      max-width: 500px;
-      margin: 0 1rem 1.5rem; /* reduced bottom margin */
-    }
-
-    .tagline {
-      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-      font-style: italic;
-      font-size: 1rem;
-      font-weight: 400;
-      letter-spacing: 1px;
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 0.5rem;
-      width: 100%;
-      text-align: center;
-      font-size: 0.75rem;
-      color: #666;
-      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.3rem;
-    }
-
-    .ig-icon {
-      width: 20px;
-      height: 20px;
-      fill: #666;
-      cursor: pointer;
-      transition: fill 0.3s ease;
-    }
-
-    .ig-icon:hover {
-      fill: #000;
-    }
-
-    /* Responsive fix for mobile spacing */
-    @media (max-width: 480px) {
-      body {
-        padding: 0 1rem 1rem 1rem;
-      }
-      p {
-        margin-bottom: 1rem;
-      }
-      .tagline {
-        margin-bottom: 0.2rem;
-      }
-      footer {
-        gap: 0.2rem;
-        bottom: 0.2rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <img src="logo.png" alt="Kencha House Logo" class="logo" />
-  <h1>Coming Soon to Toronto</h1>
-  <p>Join our matcha-making workshops to experience the traditions of tea.</p>
-
-  <footer>
-    <a href="https://www.instagram.com/kenchahouse/" target="_blank" aria-label="Instagram Kencha House">
-      <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.5-3a1 1 0 110 2 1 1 0 010-2z"/>
-      </svg>
+        <nav class="sticky top-0 z-50 bg-background-light dark:bg-background-dark border-b border-stone-200 dark:border-stone-800 shadow-sm">
+  <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
+    
+    <!-- Logo -->
+    <a href="index.html" class="flex-shrink-0">
+      <img src="https://raw.githubusercontent.com/sokawai/kh3/main/logo3.png" alt="Kencha House Logo" class="h-16 md:h-28 w-auto">
     </a>
-    <span>© 2025 Kencha House</span>
-  </footer>
-</body>
-</html>
+
+    <!-- Hamburger button - mobile only -->
+    <button id="mobile-menu-btn" class="md:hidden p-2 text-stone-600 hover:text-primary transition-colors" onclick="toggleMobileMenu()">
+      <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex flex-1 items-center justify-center gap-8 lg:gap-10 px-6">
+      <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="play.html">Play</a>
+      <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="parties.html">Parties</a>
+      <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="studio.html">Studio</a>
+      <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>
+    </div>
+
+    <!-- Desktop Visit Us Button -->
+    <div class="hidden md:flex flex-shrink-0 items-center">
+      <button class="bg-primary text-white px-7 py-3 text-sm font-medium uppercase tracking-[0.15em] hover:opacity-90 transition-opacity" onclick="window.location.href='https://kenchahouse.youcanbook.me/'">
+        Visit Us
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-background-light dark:bg-background-dark border-t border-stone-200 dark:border-stone-800">
+    <div class="px-4 py-4 space-y-4">
+      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="play.html">Play</a>
+      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="parties.html">Parties</a>
+      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="studio.html">Studio</a>
+      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>
+      <button class="w-full bg-primary text-white px-3 py-2 text-[10px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.location.href='https://kenchahouse.youcanbook.me/'">
+        Visit Us
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('hidden');
+}
+</script>
+
+<section class="relative overflow-hidden">
+<div class="aspect-[4/5] md:aspect-[21/9] w-full relative">
+<img alt="Elegant minimalist play cafe interior" class="w-full h-full object-cover brightness-95" 
+        src="https://plus.unsplash.com/premium_photo-1684779979001-945168b3cfc3?q=80&w=2727&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+        
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center px-6">
+<div class="max-w-2xl text-white">
+<p class="uppercase tracking-[0.3em] text-[10px] mb-4 opacity-90">Now Welcoming Little Dreamers</p>
+<h1 class="text-5xl md:text-7xl mb-12">A Calm, Beautiful Space for Babies & Toddlers to Grow.</h1>
+<div class="flex flex-col gap-4 max-w-xs mx-auto">
+<a class="bg-primary text-white px-8 py-4 uppercase text-[10px] tracking-[0.2em] hover:opacity-90 transition-opacity w-full" href="https://kenchahouse.youcanbook.me/">Book Private Play</a>
+<a class="border border-white text-white px-8 py-4 uppercase text-[10px] tracking-[0.2em] hover:bg-white/10 transition-colors w-full" href="about.html">Our Philosophy</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 max-w-screen-xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-5xl md:text-6xl mb-6">Thoughtfully Curated Space</h2>
+<div class="h-px w-24 bg-stone-300 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
+<div class="text-center">
+<div class="mb-6 inline-flex items-center justify-center w-20 h-20 bg-[#E8E1D9] dark:bg-stone-800 rounded-full">
+<span class="material-symbols-outlined text-3xl text-stone-600">groups</span>
+</div>
+<h3 class="text-3xl mb-4">Private Dates</h3>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed max-w-md mx-auto">Host a curated play date for your group. Perfect for new parent meetups or small family gatherings.</p>
+</div>
+<div class="text-center">
+<div class="mb-6 inline-flex items-center justify-center w-20 h-20 bg-[#E8E1D9] dark:bg-stone-800 rounded-full">
+<span class="material-symbols-outlined text-3xl text-stone-600">celebration</span>
+</div>
+<h3 class="text-3xl mb-4">Birthday Parties</h3>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed max-w-md mx-auto">A turn-key experience where every detail is managed by us, leaving you to simply enjoy the celebration.</p>
+</div>
+<div class="text-center">
+<div class="mb-6 inline-flex items-center justify-center w-20 h-20 bg-[#E8E1D9] dark:bg-stone-800 rounded-full">
+<span class="material-symbols-outlined text-3xl text-stone-600">photo_camera</span>
+</div>
+<h3 class="text-3xl mb-4">Studio Space</h3>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed max-w-md mx-auto">Our minimalist, naturally-lit space is available for photography sessions and creative brand content.</p>
+</div>
+</div>
+</section>
+<section class="bg-background-light dark:bg-stone-900/50 py-24 px-6">
+<div class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<h2 class="text-5xl md:text-6xl">Our Story</h2>
+<p class="serif-quote text-2xl italic text-stone-600 dark:text-stone-400 leading-relaxed">
+                    "Kencha House was born from a desire to create a sanctuary where babies and toddlers could explore wonder."
+                </p>
+<p class="text-stone-600 dark:text-stone-400 leading-relaxed">
+                    Inspired by the quiet magic of nature and minimal design, we've created a cafe that feels like a world of its own. We believe that parenting is a little easier when you can just enjoy being in the moment.
+                </p>
+<a class="inline-block border-b border-stone-400 text-stone-600 pb-1 text-[10px] tracking-[0.2em] uppercase hover:text-stone-900 transition-colors" href="about.html">Read More</a>
+</div>
+<div>
+<img alt="Close up of wooden baby toys" class="w-full aspect-square object-cover shadow-sm" src="https://plus.unsplash.com/premium_photo-1683133737181-0961b6e32ec0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGJhYnklMjBzb2Z0JTIwcGxheXxlbnwwfHwwfHx8MA%3D%3D"/>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-stone-800 py-24 px-6">
+<div class="max-w-xl mx-auto text-center">
+<h2 class="text-4xl mb-6">Stay Connected</h2>
+<p class="text-stone-500 dark:text-stone-400 mb-10 text-sm leading-relaxed">Join our mailing list for sneak peeks, special event invites, and seasonal updates.</p>
+<form class="space-y-4" data-brevo-form="newsletter" action="https://3a63b53b.sibforms.com/serve/MUIFAHk5FiOTahhsv8ze2CDiOlE8pI1Wd9J29O1eWxvqc2vkKwM7Wse0nysLbPaJUG1sp3zN6V9CbvVH3FHlOIcOnAVjZPm1Byyvu_lbdR_nTQqySKxp9gVSdIcNmYj5A4p9RVZ9ajs0kzjMVrBu-rbYOO7kaazuR4ugymBnmibgvwNoARhMTFjvErVN22kN7S-bulOH-gJ7uuiWTA==" method="post">
+<input class="w-full bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-700 px-6 py-4 text-sm focus:ring-primary focus:border-primary placeholder:text-stone-400" name="email" placeholder="Email Address" required type="email"/>
+<input type="hidden" name="email_address_check" value=""/>
+<input type="hidden" name="locale" value="en"/>
+<div class="flex justify-center"></div>
+<button class="w-full bg-primary text-white px-8 py-4 uppercase text-[10px] tracking-[0.2em] hover:opacity-90 transition-opacity" type="submit">Subscribe</button>
+<p class="text-xs text-stone-500 dark:text-stone-400" data-brevo-status aria-live="polite"></p>
+</form>
+</div>
+</section>
+
+<script src="https://www.google.com/recaptcha/api.js?hl=en&onload=onBrevoRecaptchaReady&render=explicit" async defer></script>
+<script src="brevo-config.js"></script>
+<script src="brevo.js"></script>
+
+</body></html>
