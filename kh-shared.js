@@ -117,7 +117,7 @@ const KH_FOOTER = '\
               </svg>\
             </a>\
             <a href="mailto:kenchahouse@gmail.com" class="text-stone-600 dark:text-stone-300 hover:text-primary transition-colors" aria-label="Email">\
-              <span class="material-symbols-outlined text-xl">mail</span>\
+              <span class="material-symbols-outlined text-xl leading-none">mail</span>\
             </a>\
           </span>\
         </p>\
