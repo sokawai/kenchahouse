@@ -14,137 +14,136 @@
   </head>
 <body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-200 transition-colors duration-300">
 
-        <nav class="sticky top-0 z-50 bg-background-light dark:bg-background-dark border-b border-stone-200 dark:border-stone-800 shadow-sm">
-  <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
-    
-    <!-- Logo -->
-    <a href="index.html" class="flex-shrink-0">
-      <img src="https://raw.githubusercontent.com/sokawai/kh3/main/logo3.png" alt="Kencha House Logo" class="h-16 md:h-28 w-auto">
+<nav class="sticky top-0 z-50 shadow-sm" style="background:#FDFDFD;border-bottom:1px solid #E9EDEA;">
+  <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="flex flex-col flex-shrink-0 leading-tight" style="text-decoration:none;">
+      <span style="font-family:'Merriweather',serif;font-size:1.15rem;color:#333333;font-weight:700;line-height:1.2;">Kencha House</span>
+      <span style="font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:#8DA082;font-weight:700;margin-top:3px;">Private Baby Cafe</span>
     </a>
-
-    <!-- Hamburger button - mobile only -->
-    <button id="mobile-menu-btn" class="md:hidden p-2 text-stone-600 hover:text-primary transition-colors" onclick="toggleMobileMenu()">
-      <span class="material-symbols-outlined text-2xl">menu</span>
+    <button id="mobile-menu-btn" class="md:hidden p-2" style="color:#8DA082;background:none;border:none;cursor:pointer;" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false">
+      <span class="material-symbols-outlined" style="font-size:28px;">menu</span>
     </button>
-
-    <!-- Desktop Navigation -->
     <div class="hidden md:flex flex-1 items-center justify-center gap-8 lg:gap-10 px-6">
-      <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="play.html">Play</a>
-      <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="parties.html">Parties</a>
-      <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="studio.html">Studio</a>
-      <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>
+      <a class="text-sm uppercase hover:opacity-70 transition-opacity" style="letter-spacing:0.18em;color:#333333;text-decoration:none;" href="play.html">Private Play</a>
+      <a class="text-sm uppercase hover:opacity-70 transition-opacity" style="letter-spacing:0.18em;color:#333333;text-decoration:none;" href="parties.html">Parties</a>
+      <a class="text-sm uppercase hover:opacity-70 transition-opacity" style="letter-spacing:0.18em;color:#333333;text-decoration:none;" href="studio.html">Studio</a>
+      <a class="text-sm uppercase hover:opacity-70 transition-opacity" style="letter-spacing:0.18em;color:#333333;text-decoration:none;" href="about.html">About</a>
     </div>
-
-    <!-- Desktop Visit Us Button -->
-    <div class="hidden md:flex flex-shrink-0 items-center">
-      <button class="bg-primary text-white px-7 py-3 text-sm font-medium uppercase tracking-[0.15em] hover:opacity-90 transition-opacity" onclick="window.open('https://kenchahouse.youcanbook.me/', '_blank', 'noopener,noreferrer')">
-        Visit Us
+    <div class="hidden md:block flex-shrink-0">
+      <button class="font-bold uppercase hover:opacity-90 transition-opacity" style="background:#8DA082;color:#fff;padding:10px 22px;border-radius:9999px;font-size:11px;letter-spacing:0.15em;border:none;cursor:pointer;" onclick="window.open('https://kenchahouse.youcanbook.me/', '_blank', 'noopener,noreferrer')">
+        Book Now
       </button>
     </div>
   </div>
-
-  <!-- Mobile Navigation Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-background-light dark:bg-background-dark border-t border-stone-200 dark:border-stone-800">
-    <div class="px-4 py-4 space-y-4">
-      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="play.html">Play</a>
-      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="parties.html">Parties</a>
-      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="studio.html">Studio</a>
-      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>
-      <button class="w-full bg-primary text-white px-3 py-2 text-[10px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.open('https://kenchahouse.youcanbook.me/', '_blank', 'noopener,noreferrer')">
-        Visit Us
+  <div id="mobile-menu" class="hidden" style="background:#FDFDFD;border-top:1px solid #E9EDEA;">
+    <div class="px-6 py-5 space-y-4">
+      <a class="block text-sm uppercase" style="letter-spacing:0.15em;color:#333333;text-decoration:none;" href="play.html">Private Play</a>
+      <a class="block text-sm uppercase" style="letter-spacing:0.15em;color:#333333;text-decoration:none;" href="parties.html">Parties</a>
+      <a class="block text-sm uppercase" style="letter-spacing:0.15em;color:#333333;text-decoration:none;" href="studio.html">Studio</a>
+      <a class="block text-sm uppercase" style="letter-spacing:0.15em;color:#333333;text-decoration:none;" href="about.html">About</a>
+      <button class="w-full font-bold uppercase hover:opacity-90 transition-opacity" style="background:#8DA082;color:#fff;padding:12px 16px;border-radius:9999px;font-size:11px;letter-spacing:0.2em;border:none;cursor:pointer;" onclick="window.open('https://kenchahouse.youcanbook.me/', '_blank', 'noopener,noreferrer')">
+        Book Now
       </button>
     </div>
   </div>
 </nav>
-
 <script>
 function toggleMobileMenu() {
   const menu = document.getElementById('mobile-menu');
-  menu.classList.toggle('hidden');
+  const btn = document.getElementById('mobile-menu-btn');
+  const isHidden = menu.classList.toggle('hidden');
+  btn.setAttribute('aria-expanded', String(!isHidden));
 }
 </script>
 
         
-<header class="pt-12 pb-8 px-6 text-center">
-<p class="uppercase tracking-[0.3em] text-[9px] mb-4 text-stone-500">The Creative Canvas</p>
-<h1 class="text-4xl md:text-5xl mb-6">Kencha Studio</h1>
-<p class="max-w-md mx-auto text-stone-600 dark:text-stone-400 text-base leading-relaxed">
+<header class="pt-16 pb-8 px-6 text-center relative overflow-hidden" style="background:#FDFDFD;">
+  <div class="absolute -top-16 -left-16 w-64 h-64 -z-10 opacity-30" style="background:#E9EDEA;border-radius:60% 40% 30% 70% / 60% 30% 70% 40%;"></div>
+<p class="uppercase font-bold mb-4" style="font-size:9px;letter-spacing:0.3em;color:#8DA082;">The Creative Canvas</p>
+<h1 class="text-4xl md:text-5xl mb-6" style="font-family:'Merriweather',serif;color:#333333;">Kencha Studio</h1>
+<p class="max-w-md mx-auto text-base leading-relaxed" style="color:#666;">
         A minimalist, naturally-lit sanctuary designed for photographers, brand creators, and intimate content sessions.
     </p>
 </header>
-<section class="px-4 py-8 bg-white dark:bg-stone-900/30">
+<!-- Studio illustration: 2 organic shapes replacing photos -->
+<section class="px-6 py-10" style="background:#FDFDFD;">
 <div class="max-w-2xl mx-auto grid grid-cols-2 gap-6">
-<div class="rounded-lg overflow-hidden">
-<img alt="Studio lighting" class="w-full h-64 object-cover" src="https://plus.unsplash.com/premium_photo-1661494158390-1dee08299a94?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGJhYnklMjBzb2Z0JTIwcGxheXxlbnwwfHwwfHx8MA%3D%3D"/>
-</div>
-<div class="rounded-lg overflow-hidden">
-<img alt="Studio corner" class="w-full h-64 object-cover" src="https://plus.unsplash.com/premium_photo-1683133737181-0961b6e32ec0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGJhYnklMjBzb2Z0JTIwcGxheXxlbnwwfHwwfHx8MA%3D%3D"/>
-</div>
+  <div class="flex items-center justify-center h-64 rounded-2xl" style="background:#E9EDEA;">
+    <span class="material-symbols-outlined opacity-40" style="font-size:90px;color:#8DA082;">photo_camera</span>
+  </div>
+  <div class="flex items-center justify-center h-64 rounded-2xl" style="background:#F7EBE8;">
+    <span class="material-symbols-outlined opacity-40" style="font-size:90px;color:#C47C64;">architecture</span>
+  </div>
 </div>
 </section>
-<section class="py-16 px-6 max-w-screen-xl mx-auto">
+<section class="py-16 px-6 max-w-screen-xl mx-auto" style="background:#FDFDFD;">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
 <div>
-<h2 class="text-3xl mb-8">The Space</h2>
+<h2 class="text-3xl mb-8" style="font-family:'Merriweather',serif;color:#333333;">The Space</h2>
 <div class="space-y-6">
 <div class="flex gap-4">
-<span class="material-symbols-outlined text-primary">architecture</span>
+<div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style="background:#E9EDEA;">
+<span class="material-symbols-outlined" style="font-size:20px;color:#8DA082;">architecture</span>
+</div>
 <div>
-<h4 class="text-xl mb-1">Minimalist Layout</h4>
-<p class="text-stone-600 dark:text-stone-400 text-base leading-relaxed">Open floor space with a clean, neutral aesthetic designed for flexible shooting setups.</p>
+<h4 class="text-xl mb-1" style="font-family:'Merriweather',serif;color:#333333;">Minimalist Layout</h4>
+<p class="text-base leading-relaxed" style="color:#666;">Open floor space with a clean, neutral aesthetic designed for flexible shooting setups.</p>
 </div>
 </div>
 <div class="flex gap-4">
-<span class="material-symbols-outlined text-primary">chair</span>
+<div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style="background:#F7EBE8;">
+<span class="material-symbols-outlined" style="font-size:20px;color:#C47C64;">chair</span>
+</div>
 <div>
-<h4 class="text-xl mb-1">Curated Props</h4>
-<p class="text-stone-600 dark:text-stone-400 text-base leading-relaxed">Selection of mid-century furniture, organic linens, and ceramic vessels included.</p>
+<h4 class="text-xl mb-1" style="font-family:'Merriweather',serif;color:#333333;">Curated Props</h4>
+<p class="text-base leading-relaxed" style="color:#666;">Selection of mid-century furniture, organic linens, and ceramic vessels included.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="bg-stone-100 dark:bg-stone-900/50 p-8">
-<h2 class="text-3xl mb-6">Rental Options</h2>
-<p class="text-stone-600 dark:text-stone-400 text-base leading-relaxed">Flexible hourly rental options available.</p>
-<button onclick="window.location.href='#booking'" class="w-full mt-10 bg-primary text-white py-4 text-[10px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity">
-                Inquire for Dates
-            </button>
+<div class="p-8 rounded-2xl" style="background:#E9EDEA;">
+<h2 class="text-3xl mb-6" style="font-family:'Merriweather',serif;color:#333333;">Rental Options</h2>
+<p class="text-base leading-relaxed" style="color:#666;">Flexible hourly rental options available.</p>
+<a href="#booking" class="flex items-center justify-center gap-2 font-bold uppercase hover:opacity-90 transition-opacity mt-10" style="background:#8DA082;color:#fff;padding:14px 28px;border-radius:9999px;font-size:11px;letter-spacing:0.12em;text-decoration:none;">
+  Inquire for Dates
+  <span class="material-symbols-outlined" style="font-size:17px;">arrow_forward</span>
+</a>
 </div>
 </div>
 </section>
-<section class="py-24 px-6 bg-white dark:bg-stone-900/30" id="booking">
+<section class="py-24 px-6" id="booking" style="background:#F7EBE8;">
 <div class="max-w-xl mx-auto">
 <div class="text-center mb-12">
-<h2 class="text-3xl mb-4">Request a Booking</h2>
-<p class="text-stone-600 dark:text-stone-400 text-base leading-relaxed">Fill out the form below and our studio manager will be in touch within 24 hours.</p>
+<h2 class="text-3xl mb-4" style="font-family:'Merriweather',serif;color:#333333;">Request a Booking</h2>
+<p class="text-base leading-relaxed" style="color:#777;">Fill out the form below and our studio manager will be in touch within 24 hours.</p>
 </div>
 <form class="space-y-6" data-brevo-form="studioInquiry">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
-<label class="text-[10px] uppercase tracking-widest text-stone-400">First Name</label>
-<input class="w-full bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 px-4 py-3 text-sm focus:ring-1 focus:ring-primary focus:border-primary" name="firstName" placeholder="Jane" required type="text"/>
+<label class="block font-bold uppercase" style="font-size:10px;letter-spacing:0.15em;color:#8DA082;">First Name</label>
+<input class="w-full px-4 py-3 text-sm focus:outline-none" style="background:#fff;border:1px solid #E9EDEA;border-radius:8px;color:#333;" name="firstName" placeholder="Jane" required type="text"/>
 </div>
 <div class="space-y-2">
-<label class="text-[10px] uppercase tracking-widest text-stone-400">Last Name</label>
-<input class="w-full bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 px-4 py-3 text-sm focus:ring-1 focus:ring-primary focus:border-primary" name="lastName" placeholder="Doe" required type="text"/>
+<label class="block font-bold uppercase" style="font-size:10px;letter-spacing:0.15em;color:#8DA082;">Last Name</label>
+<input class="w-full px-4 py-3 text-sm focus:outline-none" style="background:#fff;border:1px solid #E9EDEA;border-radius:8px;color:#333;" name="lastName" placeholder="Doe" required type="text"/>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
-<label class="text-[10px] uppercase tracking-widest text-stone-400">Email Address</label>
-<input class="w-full bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 px-4 py-3 text-sm focus:ring-1 focus:ring-primary focus:border-primary" name="email" placeholder="jane@example.com" required type="email"/>
+<label class="block font-bold uppercase" style="font-size:10px;letter-spacing:0.15em;color:#8DA082;">Email Address</label>
+<input class="w-full px-4 py-3 text-sm focus:outline-none" style="background:#fff;border:1px solid #E9EDEA;border-radius:8px;color:#333;" name="email" placeholder="jane@example.com" required type="email"/>
 </div>
 <div class="space-y-2">
-<label class="text-[10px] uppercase tracking-widest text-stone-400">Phone</label>
-<input class="w-full bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 px-4 py-3 text-sm focus:ring-1 focus:ring-primary focus:border-primary" name="phone" placeholder="(xxx) xxx-xxxx" required type="tel"/>
+<label class="block font-bold uppercase" style="font-size:10px;letter-spacing:0.15em;color:#8DA082;">Phone</label>
+<input class="w-full px-4 py-3 text-sm focus:outline-none" style="background:#fff;border:1px solid #E9EDEA;border-radius:8px;color:#333;" name="phone" placeholder="(xxx) xxx-xxxx" required type="tel"/>
 </div>
 </div>
 <div class="space-y-2">
-<label class="text-[10px] uppercase tracking-widest text-stone-400">Your Inquiry</label>
-<textarea class="w-full bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 px-4 py-3 text-sm focus:ring-1 focus:ring-primary focus:border-primary" name="message" placeholder="Describe your shoot — type of session, preferred dates, any specific requirements..." required rows="4"></textarea>
+<label class="block font-bold uppercase" style="font-size:10px;letter-spacing:0.15em;color:#8DA082;">Your Inquiry</label>
+<textarea class="w-full px-4 py-3 text-sm focus:outline-none" style="background:#fff;border:1px solid #E9EDEA;border-radius:8px;color:#333;" name="message" placeholder="Describe your shoot — type of session, preferred dates, any specific requirements..." required rows="4"></textarea>
 </div>
-<button class="w-full bg-[var(--color-primary)] text-white py-4 rounded uppercase text-xs tracking-[0.2em] hover:opacity-90 transition-opacity" data-submitting-label="Submitting..." type="submit">Submit Inquiry</button>
-<p class="text-xs text-stone-500 dark:text-stone-400" data-brevo-status aria-live="polite"></p>
+<button class="w-full font-bold uppercase hover:opacity-90 transition-opacity" style="background:#8DA082;color:#fff;padding:14px 28px;border-radius:9999px;font-size:11px;letter-spacing:0.2em;border:none;cursor:pointer;" data-submitting-label="Submitting..." type="submit">Submit Inquiry</button>
+<p class="text-xs" style="color:#999;" data-brevo-status aria-live="polite"></p>
 </form>
 </div>
 </section>

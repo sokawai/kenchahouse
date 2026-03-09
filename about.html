@@ -14,44 +14,35 @@
   </head>
 <body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-200 transition-colors duration-300">
 
-                <nav class="sticky top-0 z-50 bg-background-light dark:bg-background-dark border-b border-stone-200 dark:border-stone-800 shadow-sm">
-    <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
-    
-        <!-- Logo -->
-        <a href="index.html" class="flex-shrink-0">
-            <img src="https://raw.githubusercontent.com/sokawai/kh3/main/logo3.png" alt="Kencha House Logo" class="h-16 md:h-28 w-auto">
+                <nav class="sticky top-0 z-50 shadow-sm" style="background:#FDFDFD;border-bottom:1px solid #E9EDEA;">
+    <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex flex-col flex-shrink-0 leading-tight" style="text-decoration:none;">
+            <span style="font-family:'Merriweather',serif;font-size:1.15rem;color:#333333;font-weight:700;line-height:1.2;">Kencha House</span>
+            <span style="font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:#8DA082;font-weight:700;margin-top:3px;">Private Baby Cafe</span>
         </a>
-
-        <!-- Hamburger button - mobile only -->
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-stone-600 hover:text-primary transition-colors" onclick="toggleMobileMenu()">
-            <span class="material-symbols-outlined text-2xl">menu</span>
+        <button id="mobile-menu-btn" class="md:hidden p-2" style="color:#8DA082;background:none;border:none;cursor:pointer;" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false">
+            <span class="material-symbols-outlined" style="font-size:28px;">menu</span>
         </button>
-
-        <!-- Desktop Navigation -->
         <div class="hidden md:flex flex-1 items-center justify-center gap-8 lg:gap-10 px-6">
-            <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="play.html">Play</a>
-            <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="parties.html">Parties</a>
-            <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="studio.html">Studio</a>
-            <a class="text-sm uppercase tracking-[0.18em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>
+            <a class="text-sm uppercase hover:opacity-70 transition-opacity" style="letter-spacing:0.18em;color:#333333;text-decoration:none;" href="play.html">Private Play</a>
+            <a class="text-sm uppercase hover:opacity-70 transition-opacity" style="letter-spacing:0.18em;color:#333333;text-decoration:none;" href="parties.html">Parties</a>
+            <a class="text-sm uppercase hover:opacity-70 transition-opacity" style="letter-spacing:0.18em;color:#333333;text-decoration:none;" href="studio.html">Studio</a>
+            <a class="text-sm uppercase hover:opacity-70 transition-opacity" style="letter-spacing:0.18em;color:#333333;text-decoration:none;" href="about.html">About</a>
         </div>
-
-        <!-- Desktop Visit Us Button -->
-        <div class="hidden md:flex flex-shrink-0 items-center">
-            <button class="bg-primary text-white px-7 py-3 text-sm font-medium uppercase tracking-[0.15em] hover:opacity-90 transition-opacity" onclick="window.open('https://kenchahouse.youcanbook.me/', '_blank', 'noopener,noreferrer')">
-                Visit Us
+        <div class="hidden md:block flex-shrink-0">
+            <button class="font-bold uppercase hover:opacity-90 transition-opacity" style="background:#8DA082;color:#fff;padding:10px 22px;border-radius:9999px;font-size:11px;letter-spacing:0.15em;border:none;cursor:pointer;" onclick="window.open('https://kenchahouse.youcanbook.me/', '_blank', 'noopener,noreferrer')">
+                Book Now
             </button>
         </div>
     </div>
-
-    <!-- Mobile Navigation Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-background-light dark:bg-background-dark border-t border-stone-200 dark:border-stone-800">
-        <div class="px-4 py-4 space-y-4">
-            <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="play.html">Play</a>
-            <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="parties.html">Parties</a>
-            <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="studio.html">Studio</a>
-            <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>
-            <button class="w-full bg-primary text-white px-3 py-2 text-[10px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.open('https://kenchahouse.youcanbook.me/', '_blank', 'noopener,noreferrer')">
-                Visit Us
+    <div id="mobile-menu" class="hidden" style="background:#FDFDFD;border-top:1px solid #E9EDEA;">
+        <div class="px-6 py-5 space-y-4">
+            <a class="block text-sm uppercase" style="letter-spacing:0.15em;color:#333333;text-decoration:none;" href="play.html">Private Play</a>
+            <a class="block text-sm uppercase" style="letter-spacing:0.15em;color:#333333;text-decoration:none;" href="parties.html">Parties</a>
+            <a class="block text-sm uppercase" style="letter-spacing:0.15em;color:#333333;text-decoration:none;" href="studio.html">Studio</a>
+            <a class="block text-sm uppercase" style="letter-spacing:0.15em;color:#333333;text-decoration:none;" href="about.html">About</a>
+            <button class="w-full font-bold uppercase hover:opacity-90 transition-opacity" style="background:#8DA082;color:#fff;padding:12px 16px;border-radius:9999px;font-size:11px;letter-spacing:0.2em;border:none;cursor:pointer;" onclick="window.open('https://kenchahouse.youcanbook.me/', '_blank', 'noopener,noreferrer')">
+                Book Now
             </button>
         </div>
     </div>
@@ -60,39 +51,52 @@
 <script>
 function toggleMobileMenu() {
     const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
+    const btn = document.getElementById('mobile-menu-btn');
+    const isHidden = menu.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', String(!isHidden));
 }
 </script>
 
         
-<section class="pt-20 pb-12 px-6 text-center">
-<span class="uppercase tracking-[0.3em] text-[10px] text-stone-500 mb-4 block">Our Story</span>
-<h1 class="text-4xl md:text-5xl mb-6">Built on Love &amp; Gentle Wonder</h1>
-<div class="h-px w-16 bg-primary mx-auto"></div>
+<section class="pt-20 pb-12 px-6 text-center relative overflow-hidden" style="background:#FDFDFD;">
+  <div class="absolute -top-20 -right-20 w-72 h-72 -z-10 opacity-35" style="background:#E9EDEA;border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;"></div>
+<span class="uppercase font-bold mb-4 block" style="font-size:10px;letter-spacing:0.3em;color:#8DA082;">Our Story</span>
+<h1 class="text-4xl md:text-5xl mb-6" style="font-family:'Merriweather',serif;color:#333333;">Built on Love &amp; Gentle Wonder</h1>
+<div class="h-px w-16 mx-auto" style="background:#8DA082;"></div>
 </section>
 <section class="py-16 px-6">
-<div class="max-w-md mx-auto">
-<div class="aspect-[3/4] mb-10 overflow-hidden">
-<img alt="Serene play environment" class="w-full h-full object-cover" src="https://plus.unsplash.com/premium_photo-1684164601635-2d9e37b2512b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJhYnklMjBzb2Z0JTIwcGxheXxlbnwwfHwwfHx8MA%3D%3D"/>
-</div>
-<h2 class="text-3xl mb-6">Our Story</h2>
-<p class="text-base text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+<div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+  <!-- Illustration shape replacing portrait photo -->
+  <div class="relative flex items-center justify-center">
+    <div class="absolute w-64 h-64 md:w-72 md:h-72 opacity-15" style="background:#C47C64;border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;"></div>
+    <div class="w-64 h-64 md:w-72 md:h-72 flex items-center justify-center relative overflow-hidden" style="background:#F7EBE8;border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;">
+      <span class="material-symbols-outlined opacity-40" style="font-size:110px;color:#C47C64;">favorite</span>
+      <div class="absolute top-8 left-8 w-16 h-16 opacity-25" style="background:#8DA082;border-radius:60% 40% 30% 70% / 60% 30% 70% 40%;"></div>
+    </div>
+  </div>
+
+  <div>
+<h2 class="text-3xl mb-6" style="font-family:'Merriweather',serif;color:#333333;">Our Story</h2>
+<p class="text-base leading-relaxed mb-6" style="color:#666;">
             Kencha House was born from a desire to create something different — a space where babies and toddlers are the priority.
         </p>
-<p class="text-base text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+<p class="text-base leading-relaxed mb-6" style="color:#666;">
             Not oversized play gyms. Not chaotic environments. But a calm, beautifully prepared setting where early development and connection matter.
         </p>
-<div class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+<div class="leading-relaxed mb-6" style="color:#666;">
             <div class="text-base mb-4 font-semibold">We believe:</div>
             <ul class="space-y-2 text-base">
-                <li>• Babies deserve safe exploration</li>
-                <li>• Toddlers need space to test their confidence</li>
-                <li>• Caregivers should feel welcome, not overwhelmed</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined" style="font-size:16px;color:#8DA082;margin-top:2px;">check_circle</span>Babies deserve safe exploration</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined" style="font-size:16px;color:#8DA082;margin-top:2px;">check_circle</span>Toddlers need space to test their confidence</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined" style="font-size:16px;color:#8DA082;margin-top:2px;">check_circle</span>Caregivers should feel welcome, not overwhelmed</li>
             </ul>
         </div>
-<p class="text-base text-stone-600 dark:text-stone-400 leading-relaxed">
+<p class="text-base leading-relaxed" style="color:#666;">
             Located in Toronto, Kencha House is a gathering place for families who value intentional childhood experiences.
         </p>
+  </div>
+
 </div>
 </section>
 
