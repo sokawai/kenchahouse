@@ -1,0 +1,23 @@
+<button onclick="testBooking()">Test Booking</button>
+
+<script>
+function testBooking() {
+  fetch("https://script.google.com/macros/s/AKfycbwcp26H19jQ3hlGUdwMA--BBo79uPNoB603Yg5h8lcKDYNKNq2XSiLBk3z5I_fntC8P0w/exec", {
+    method: "POST",
+    body: JSON.stringify({
+      name: "Test User",
+      email: "test@email.com",
+      phone: "123",
+      startTime: "2026-04-20T10:00:00",
+      endTime: "2026-04-20T11:00:00",
+      guests: 3,
+      childName: "Leo",
+      childAge: 2,
+      notes: "Test",
+      type: "party"
+    })
+  })
+  .then(r => r.json())
+  .then(console.log);
+}
+</script>
