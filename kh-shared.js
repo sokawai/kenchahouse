@@ -21,11 +21,16 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        primary:            "#8C7A6B", // Sophisticated taupe/brown
-        "background-light": "#F9F7F2", // Warm creamy beige
-        "background-dark":  "#1A1918", // Deep charcoal/earth
-        accent:             "#E5DACE",
-        sand:               "#F5F2ED",
+        primary:            "#8DA082", // Sage green
+        sage:               "#8DA082",
+        terracotta:         "#C47C64",
+        charcoal:           "#333333",
+        "sage-light":       "#E9EDEA",
+        "terracotta-light": "#F7EBE8",
+        "background-light": "#FDFDFD",
+        "background-dark":  "#1A1918",
+        accent:             "#E9EDEA",
+        sand:               "#F7EBE8",
       },
       fontFamily: {
         display: ["'Merriweather'", "serif"],
@@ -43,34 +48,35 @@ tailwind.config = {
 // Shared Navigation
 // --------------------------------------------------
 const KH_NAV = '\
-<nav class="sticky top-0 z-50 bg-background-light dark:bg-background-dark border-b border-stone-200 dark:border-stone-800 shadow-sm">\
-  <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">\
-    <a href="index.html" class="flex-shrink-0">\
-      <img src="https://raw.githubusercontent.com/sokawai/kh3/main/logo3.png" alt="Kencha House Logo" class="h-16 md:h-28 w-auto">\
+<nav class="sticky top-0 z-50 bg-[#FDFDFD] border-b border-[#E9EDEA] shadow-sm">\
+  <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">\
+    <a href="index.html" class="flex flex-col flex-shrink-0 leading-tight">\
+      <span class="text-xl font-display text-[#333333]" style="font-family:\'Merriweather\',serif">Kencha House</span>\
+      <span class="text-[9px] tracking-[0.3em] uppercase text-[#8DA082] font-bold font-sans mt-0.5">Private Baby Cafe</span>\
     </a>\
-    <button id="mobile-menu-btn" class="md:hidden p-2 text-stone-600 hover:text-primary transition-colors" onclick="toggleMobileMenu()">\
-      <span class="material-symbols-outlined text-2xl">menu</span>\
+    <button id="mobile-menu-btn" class="md:hidden p-2 text-[#8DA082] hover:opacity-80 transition-opacity" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false">\
+      <span class="material-symbols-outlined text-3xl">menu</span>\
     </button>\
-    <div class="hidden md:flex items-center gap-4 md:gap-8 mx-auto px-4">\
-      <a class="text-[12px] uppercase tracking-[0.2em] text-stone-600 hover:text-primary transition-colors" href="play.html">Play</a>\
-      <a class="text-[12px] uppercase tracking-[0.2em] text-stone-600 hover:text-primary transition-colors" href="parties.html">Parties</a>\
-      <a class="text-[12px] uppercase tracking-[0.2em] text-stone-600 hover:text-primary transition-colors" href="studio.html">Studio</a>\
-      <a class="text-[12px] uppercase tracking-[0.2em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>\
+    <div class="hidden md:flex flex-1 items-center justify-center gap-8 lg:gap-10 px-6">\
+      <a class="text-sm uppercase tracking-[0.18em] text-[#333333] hover:text-[#8DA082] transition-colors" href="play.html">Play</a>\
+      <a class="text-sm uppercase tracking-[0.18em] text-[#333333] hover:text-[#8DA082] transition-colors" href="parties.html">Parties</a>\
+      <a class="text-sm uppercase tracking-[0.18em] text-[#333333] hover:text-[#8DA082] transition-colors" href="studio.html">Studio</a>\
+      <a class="text-sm uppercase tracking-[0.18em] text-[#333333] hover:text-[#8DA082] transition-colors" href="about.html">About</a>\
     </div>\
-    <div class="hidden md:flex items-center gap-4 md:gap-6">\
-      <button class="bg-primary text-white px-5 py-2 text-xs uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.open(\'https://kenchahouse.youcanbook.me/\', \'_blank\', \'noopener,noreferrer\')">\
-        Visit Us\
+    <div class="hidden md:flex flex-shrink-0 items-center">\
+      <button class="bg-[#8DA082] text-white px-6 py-3 rounded-full text-xs font-bold uppercase tracking-[0.15em] hover:opacity-90 transition-opacity" onclick="window.open(\'https://kenchahouse.youcanbook.me/\', \'_blank\', \'noopener,noreferrer\')">\
+        Book Now\
       </button>\
     </div>\
   </div>\
-  <div id="mobile-menu" class="hidden md:hidden bg-background-light dark:bg-background-dark border-t border-stone-200 dark:border-stone-800">\
-    <div class="px-4 py-4 space-y-4">\
-      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="play.html">Play</a>\
-      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="parties.html">Parties</a>\
-      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="studio.html">Studio</a>\
-      <a class="block text-[11px] uppercase tracking-[0.15em] text-stone-600 hover:text-primary transition-colors" href="about.html">About</a>\
-      <button class="w-full bg-primary text-white px-3 py-2 text-[10px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.open(\'https://kenchahouse.youcanbook.me/\', \'_blank\', \'noopener,noreferrer\')">\
-        Visit Us\
+  <div id="mobile-menu" class="hidden md:hidden bg-[#FDFDFD] border-t border-[#E9EDEA]">\
+    <div class="px-6 py-5 space-y-4">\
+      <a class="block text-sm uppercase tracking-[0.15em] text-[#333333] hover:text-[#8DA082] transition-colors" href="play.html">Play</a>\
+      <a class="block text-sm uppercase tracking-[0.15em] text-[#333333] hover:text-[#8DA082] transition-colors" href="parties.html">Parties</a>\
+      <a class="block text-sm uppercase tracking-[0.15em] text-[#333333] hover:text-[#8DA082] transition-colors" href="studio.html">Studio</a>\
+      <a class="block text-sm uppercase tracking-[0.15em] text-[#333333] hover:text-[#8DA082] transition-colors" href="about.html">About</a>\
+      <button class="w-full bg-[#8DA082] text-white px-4 py-3 rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:opacity-90 transition-opacity" onclick="window.open(\'https://kenchahouse.youcanbook.me/\', \'_blank\', \'noopener,noreferrer\')">\
+        Book Now\
       </button>\
     </div>\
   </div>\
@@ -80,51 +86,53 @@ const KH_NAV = '\
 // Shared Footer
 // --------------------------------------------------
 const KH_FOOTER = '\
-<footer class="bg-white dark:bg-background-dark pt-16 pb-8 px-6">\
-  <div class="max-w-screen-xl mx-auto space-y-12">\
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">\
+<footer style="background:#FDFDFD;border-top:1px solid #E9EDEA;padding:5rem 1.5rem 2rem;">\
+  <div class="max-w-screen-xl mx-auto">\
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">\
       <div>\
-        <h3 class="text-2xl font-display uppercase tracking-widest mb-4">Kencha House</h3>\
-        <p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed max-w-xs">A boutique play cafe for babies and toddlers.</p>\
-      </div>\
-      <div>\
-        <h4 class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-6">Explore</h4>\
-        <ul class="space-y-4 text-sm text-stone-600 dark:text-stone-300">\
-          <li><a class="hover:text-primary transition-colors" href="play.html">Our Play Space</a></li>\
-          <li><a class="hover:text-primary transition-colors" href="parties.html">Private Events</a></li>\
-          <li><a class="hover:text-primary transition-colors" href="studio.html">Studio Rental</a></li>\
-        </ul>\
-      </div>\
-      <div>\
-        <h4 class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-6">Support</h4>\
-        <ul class="space-y-4 text-sm text-stone-600 dark:text-stone-300">\
-          <li><a class="hover:text-primary transition-colors" href="mailto:kenchahouse@gmail.com">Contact Us</a></li>\
-          <li><a class="hover:text-primary transition-colors" href="faq.html">FAQ</a></li>\
-          <li><a class="hover:text-primary transition-colors" href="https://form.jotform.com/260586396097270">Waiver</a></li>\
-        </ul>\
-      </div>\
-      <div>\
-        <h4 class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-6">Visit</h4>\
-        <p class="text-sm text-stone-600 dark:text-stone-300 leading-relaxed">\
-          <a href="https://maps.google.com/?q=222+Finch+Ave+W+Suite+105+North+York+ON+M2R+1M6" target="_blank" rel="noopener noreferrer" class="inline-block hover:text-primary transition-colors">\
-            <span class="block">222 Finch Ave W Suite 105,</span>\
-            <span class="block mt-1">North York, ON M2R 1M6</span>\
+        <h4 style="font-family:\'Merriweather\',serif;font-size:1.3rem;color:#333333;margin-bottom:1rem;">Kencha House</h4>\
+        <p style="color:#999;font-size:0.875rem;line-height:1.7;max-width:260px;">The door is unlocked. A boutique play experience focused on simplicity, beauty, and the wonder of early childhood.</p>\
+        <div style="display:flex;gap:1rem;margin-top:1.5rem;">\
+          <a href="https://www.instagram.com/kenchahouse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="color:#8DA082;display:inline-flex;">\
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">\
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.75a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-8.5a4 4 0 0 0-4-4h-8.5Zm8.88 1.5a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Z"/>\
+            </svg>\
           </a>\
-          <span class="mt-4 flex items-center gap-4">\
-            <a href="https://www.instagram.com/kenchahouse/" class="text-stone-600 dark:text-stone-300 hover:text-primary transition-colors" target="_blank" aria-label="Instagram">\
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">\
-                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.75a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-8.5a4 4 0 0 0-4-4h-8.5Zm8.88 1.5a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Z"/>\
-              </svg>\
-            </a>\
-            <a href="mailto:kenchahouse@gmail.com" class="text-stone-600 dark:text-stone-300 hover:text-primary transition-colors" aria-label="Email">\
-              <span class="material-symbols-outlined text-xl leading-none">mail</span>\
-            </a>\
-          </span>\
-        </p>\
+          <a href="mailto:kenchahouse@gmail.com" aria-label="Email" style="color:#8DA082;display:inline-flex;">\
+            <span class="material-symbols-outlined" style="font-size:20px;line-height:1;">mail</span>\
+          </a>\
+        </div>\
+      </div>\
+      <div>\
+        <h5 style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#999;font-weight:700;margin-bottom:1.5rem;">Navigate</h5>\
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem;">\
+          <li><a href="index.html" style="color:#555;font-size:0.875rem;text-decoration:none;" class="hover:text-[#8DA082] transition-colors">Home</a></li>\
+          <li><a href="play.html" style="color:#555;font-size:0.875rem;text-decoration:none;" class="hover:text-[#8DA082] transition-colors">Private Play</a></li>\
+          <li><a href="parties.html" style="color:#555;font-size:0.875rem;text-decoration:none;" class="hover:text-[#8DA082] transition-colors">Parties</a></li>\
+          <li><a href="faq.html" style="color:#555;font-size:0.875rem;text-decoration:none;" class="hover:text-[#8DA082] transition-colors">FAQ &amp; Guidelines</a></li>\
+          <li><a href="https://form.jotform.com/260586396097270" style="color:#555;font-size:0.875rem;text-decoration:none;" class="hover:text-[#8DA082] transition-colors">Waiver</a></li>\
+        </ul>\
+      </div>\
+      <div>\
+        <h5 style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#999;font-weight:700;margin-bottom:1.5rem;">Contact</h5>\
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem;">\
+          <li style="display:flex;align-items:flex-start;gap:8px;color:#555;font-size:0.875rem;">\
+            <span class="material-symbols-outlined" style="font-size:16px;color:#8DA082;margin-top:2px;flex-shrink:0;">location_on</span>\
+            <a href="https://maps.google.com/?q=222+Finch+Ave+W+Suite+105+North+York+ON+M2R+1M6" target="_blank" rel="noopener noreferrer" style="color:#555;text-decoration:none;" class="hover:text-[#8DA082] transition-colors">222 Finch Ave W Suite 105,<br/>North York, ON M2R 1M6</a>\
+          </li>\
+          <li style="display:flex;align-items:center;gap:8px;color:#555;font-size:0.875rem;">\
+            <span class="material-symbols-outlined" style="font-size:16px;color:#8DA082;flex-shrink:0;">mail</span>\
+            <a href="mailto:kenchahouse@gmail.com" style="color:#555;text-decoration:none;" class="hover:text-[#8DA082] transition-colors">kenchahouse@gmail.com</a>\
+          </li>\
+          <li style="display:flex;align-items:center;gap:8px;color:#555;font-size:0.875rem;">\
+            <span class="material-symbols-outlined" style="font-size:16px;color:#8DA082;flex-shrink:0;">schedule</span>\
+            By Appointment Only\
+          </li>\
+        </ul>\
       </div>\
     </div>\
-    <div class="border-t border-stone-100 dark:border-stone-800 pt-12 text-center">\
-      <p class="text-[10px] text-stone-400 tracking-wider">&copy; 2026 Kencha House. All rights reserved.</p>\
+    <div style="border-top:1px solid #E9EDEA;padding-top:2rem;text-align:center;">\
+      <p style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#bbb;">&copy; 2026 Kencha House. All Rights Reserved.</p>\
     </div>\
   </div>\
 </footer>';

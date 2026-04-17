@@ -8,12 +8,20 @@
    Design Tokens
    -------------------------------------------------- */
 :root {
-  /* Colors */
-  --color-primary:           #8C7A6B; /* Sophisticated taupe/brown */
-  --color-background-light:  #F9F7F2; /* Warm creamy beige */
-  --color-background-dark:   #1A1918; /* Deep charcoal/earth */
-  --color-accent:            #E5DACE;
-  --color-sand:              #F5F2ED;
+  /* Illustration-based palette */
+  --color-sage:              #8DA082; /* Sage green — primary */
+  --color-terracotta:        #C47C64; /* Warm terracotta — accent */
+  --color-charcoal:          #333333; /* Deep charcoal — body text */
+  --color-sage-light:        #E9EDEA; /* Sage tint — backgrounds */
+  --color-terracotta-light:  #F7EBE8; /* Terracotta tint — backgrounds */
+  --color-white:             #FDFDFD; /* Off-white */
+
+  /* Legacy aliases (keep for backward compatibility) */
+  --color-primary:           #8DA082;
+  --color-background-light:  #FDFDFD;
+  --color-background-dark:   #1A1918;
+  --color-accent:            #E9EDEA;
+  --color-sand:              #F7EBE8;
 
   /* Typography */
   --font-display: 'Merriweather', serif;
@@ -32,15 +40,32 @@ html {
 /* --------------------------------------------------
    Base Styles
    -------------------------------------------------- */
+html {
+  background-color: var(--color-background-light);
+  overflow-x: clip;
+}
+
 body {
   font-family: var(--font-sans);
   min-height: max(884px, 100dvh);
   background-color: var(--color-background-light);
+  color: var(--color-charcoal);
   overflow-x: clip;
 }
 
 h1, h2, h3, h4, .serif-quote {
   font-family: var(--font-display);
+}
+
+/* --------------------------------------------------
+   Illustration Shape Utilities
+   -------------------------------------------------- */
+.organic-shape-1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.organic-shape-2 {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 /* --------------------------------------------------
@@ -58,6 +83,13 @@ h1, h2, h3, h4, .serif-quote {
 .text-primary {
   color: var(--color-primary);
 }
+
+.bg-sage { background-color: var(--color-sage); }
+.text-sage { color: var(--color-sage); }
+.bg-terracotta { background-color: var(--color-terracotta); }
+.text-terracotta { color: var(--color-terracotta); }
+.bg-sage-light { background-color: var(--color-sage-light); }
+.bg-terracotta-light { background-color: var(--color-terracotta-light); }
 
 /* Guarantee the sticky nav is always fully opaque — never bleeds. */
 nav.sticky {
